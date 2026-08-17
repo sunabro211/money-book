@@ -1,29 +1,20 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1" />
-<title>MoneyBook</title>
-<meta name="theme-color" content="#13312E" />
-<link rel="manifest" href="manifest.json" />
-<link rel="apple-touch-icon" href="apple-touch-icon.png" />
-<meta name="apple-mobile-web-app-capable" content="yes" />
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-<style>*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/*! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com*/*,:after,:before{box-sizing:border-box;border:0 solid #e5e7eb}:after,:before{--tw-content:""}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0}.bottom-0{bottom:0}.left-0{left:0}.right-0{right:0}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.-mt-4{margin-top:-1rem}.mb-0\.5{margin-bottom:.125rem}.mb-1{margin-bottom:.25rem}.mb-1\.5{margin-bottom:.375rem}.mb-2{margin-bottom:.5rem}.mb-3{margin-bottom:.75rem}.mb-4{margin-bottom:1rem}.ml-0\.5{margin-left:.125rem}.mt-0\.5{margin-top:.125rem}.mt-1{margin-top:.25rem}.mt-2{margin-top:.5rem}.mt-3{margin-top:.75rem}.mt-4{margin-top:1rem}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.h-1{height:.25rem}.h-12{height:3rem}.h-2{height:.5rem}.h-2\.5{height:.625rem}.h-5{height:1.25rem}.h-6{height:1.5rem}.h-8{height:2rem}.h-full{height:100%}.w-10{width:2.5rem}.w-11{width:2.75rem}.w-12{width:3rem}.w-14{width:3.5rem}.w-16{width:4rem}.w-2{width:.5rem}.w-2\.5{width:.625rem}.w-24{width:6rem}.w-5{width:1.25rem}.w-8{width:2rem}.w-full{width:100%}.min-w-0{min-width:0}.max-w-md{max-width:28rem}.flex-1{flex:1 1 0%}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-end{align-items:flex-end}.items-center{align-items:center}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.justify-around{justify-content:space-around}.gap-0\.5{gap:.125rem}.gap-1{gap:.25rem}.gap-1\.5{gap:.375rem}.gap-2{gap:.5rem}.gap-3{gap:.75rem}.gap-4{gap:1rem}.space-y-1>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.25rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.25rem*var(--tw-space-y-reverse))}.space-y-1\.5>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.375rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.375rem*var(--tw-space-y-reverse))}.space-y-2>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.5rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.5rem*var(--tw-space-y-reverse))}.space-y-3>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.75rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.75rem*var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-y-auto{overflow-y:auto}.truncate{overflow:hidden;text-overflow:ellipsis}.truncate,.whitespace-nowrap{white-space:nowrap}.rounded{border-radius:.25rem}.rounded-2xl{border-radius:1rem}.rounded-3xl{border-radius:1.5rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:.5rem}.rounded-xl{border-radius:.75rem}.rounded-t-3xl{border-top-left-radius:1.5rem;border-top-right-radius:1.5rem}.border{border-width:1px}.bg-transparent{background-color:transparent}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1))}.p-3{padding:.75rem}.p-3\.5{padding:.875rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.px-0\.5{padding-left:.125rem;padding-right:.125rem}.px-1{padding-left:.25rem;padding-right:.25rem}.px-1\.5{padding-left:.375rem;padding-right:.375rem}.px-2{padding-left:.5rem;padding-right:.5rem}.px-2\.5{padding-left:.625rem;padding-right:.625rem}.px-3{padding-left:.75rem;padding-right:.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-0\.5{padding-top:.125rem;padding-bottom:.125rem}.py-1{padding-top:.25rem;padding-bottom:.25rem}.py-1\.5{padding-top:.375rem;padding-bottom:.375rem}.py-2{padding-top:.5rem;padding-bottom:.5rem}.py-2\.5{padding-top:.625rem;padding-bottom:.625rem}.py-3{padding-top:.75rem;padding-bottom:.75rem}.pb-28{padding-bottom:7rem}.pb-8{padding-bottom:2rem}.pt-3{padding-top:.75rem}.pt-5{padding-top:1.25rem}.text-left{text-align:left}.text-center{text-align:center}.text-right{text-align:right}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:.75rem;line-height:1rem}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-normal{font-weight:400}.font-semibold{font-weight:600}.tabular-nums{--tw-numeric-spacing:tabular-nums;font-variant-numeric:var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction)}.leading-none{line-height:1}.tracking-tight{letter-spacing:-.025em}.tracking-wide{letter-spacing:.025em}.tracking-widest{letter-spacing:.1em}.text-black{--tw-text-opacity:1;color:rgb(0 0 0/var(--tw-text-opacity,1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.underline{text-decoration-line:underline}.underline-offset-2{text-underline-offset:2px}.opacity-70{opacity:.7}.opacity-80{opacity:.8}.shadow-lg{--tw-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color),0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.outline-none{outline:2px solid transparent;outline-offset:2px}.ring{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)}.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.transition{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}</style>
+<!DOCTYPE html><html lang="ko"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1"/>
+<title>MoneyBook</title><meta name="theme-color" content="#13312E"/>
+<link rel="manifest" href="manifest.json"/><link rel="apple-touch-icon" href="apple-touch-icon.png"/>
+<meta name="mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-capable" content="yes"/>
 <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<style id="tw">*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/*! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com*/*,:after,:before{box-sizing:border-box;border:0 solid #e5e7eb}:after,:before{--tw-content:""}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0}.bottom-0{bottom:0}.left-0{left:0}.right-0{right:0}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.-mt-4{margin-top:-1rem}.mb-0\.5{margin-bottom:.125rem}.mb-1{margin-bottom:.25rem}.mb-1\.5{margin-bottom:.375rem}.mb-2{margin-bottom:.5rem}.mb-3{margin-bottom:.75rem}.mb-4{margin-bottom:1rem}.ml-0\.5{margin-left:.125rem}.mt-0\.5{margin-top:.125rem}.mt-1{margin-top:.25rem}.mt-2{margin-top:.5rem}.mt-3{margin-top:.75rem}.mt-4{margin-top:1rem}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.h-1{height:.25rem}.h-12{height:3rem}.h-2{height:.5rem}.h-2\.5{height:.625rem}.h-5{height:1.25rem}.h-6{height:1.5rem}.h-8{height:2rem}.h-full{height:100%}.w-10{width:2.5rem}.w-11{width:2.75rem}.w-12{width:3rem}.w-14{width:3.5rem}.w-16{width:4rem}.w-2{width:.5rem}.w-2\.5{width:.625rem}.w-24{width:6rem}.w-5{width:1.25rem}.w-8{width:2rem}.w-full{width:100%}.min-w-0{min-width:0}.max-w-md{max-width:28rem}.flex-1{flex:1 1 0%}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-end{align-items:flex-end}.items-center{align-items:center}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.justify-around{justify-content:space-around}.gap-0\.5{gap:.125rem}.gap-1{gap:.25rem}.gap-1\.5{gap:.375rem}.gap-2{gap:.5rem}.gap-3{gap:.75rem}.gap-4{gap:1rem}.space-y-1>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.25rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.25rem*var(--tw-space-y-reverse))}.space-y-1\.5>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.375rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.375rem*var(--tw-space-y-reverse))}.space-y-2>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.5rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.5rem*var(--tw-space-y-reverse))}.space-y-3>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.75rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.75rem*var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-y-auto{overflow-y:auto}.truncate{overflow:hidden;text-overflow:ellipsis}.truncate,.whitespace-nowrap{white-space:nowrap}.rounded{border-radius:.25rem}.rounded-2xl{border-radius:1rem}.rounded-3xl{border-radius:1.5rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:.5rem}.rounded-xl{border-radius:.75rem}.rounded-t-3xl{border-top-left-radius:1.5rem;border-top-right-radius:1.5rem}.border{border-width:1px}.bg-transparent{background-color:transparent}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1))}.p-3{padding:.75rem}.p-3\.5{padding:.875rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.px-0\.5{padding-left:.125rem;padding-right:.125rem}.px-1{padding-left:.25rem;padding-right:.25rem}.px-1\.5{padding-left:.375rem;padding-right:.375rem}.px-2{padding-left:.5rem;padding-right:.5rem}.px-2\.5{padding-left:.625rem;padding-right:.625rem}.px-3{padding-left:.75rem;padding-right:.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-0\.5{padding-top:.125rem;padding-bottom:.125rem}.py-1{padding-top:.25rem;padding-bottom:.25rem}.py-1\.5{padding-top:.375rem;padding-bottom:.375rem}.py-2{padding-top:.5rem;padding-bottom:.5rem}.py-2\.5{padding-top:.625rem;padding-bottom:.625rem}.py-3{padding-top:.75rem;padding-bottom:.75rem}.pb-28{padding-bottom:7rem}.pb-8{padding-bottom:2rem}.pt-3{padding-top:.75rem}.pt-5{padding-top:1.25rem}.text-left{text-align:left}.text-center{text-align:center}.text-right{text-align:right}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:.75rem;line-height:1rem}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-normal{font-weight:400}.font-semibold{font-weight:600}.tabular-nums{--tw-numeric-spacing:tabular-nums;font-variant-numeric:var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction)}.leading-none{line-height:1}.tracking-tight{letter-spacing:-.025em}.tracking-wide{letter-spacing:.025em}.tracking-widest{letter-spacing:.1em}.text-black{--tw-text-opacity:1;color:rgb(0 0 0/var(--tw-text-opacity,1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.underline{text-decoration-line:underline}.underline-offset-2{text-underline-offset:2px}.opacity-70{opacity:.7}.opacity-80{opacity:.8}.shadow-lg{--tw-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color),0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.outline-none{outline:2px solid transparent;outline-offset:2px}.ring{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)}.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.transition{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}</style>
 <style> body{ -webkit-tap-highlight-color: transparent; } input{ font-size:16px; min-width:0; } </style>
-</head>
-<body>
-<div id="root"></div>
-
+</head><body><div id="root"></div>
 <script>
 const {
   useState,
   useEffect
 } = React;
 
-/* ⚠️ 여기에 Apps Script 배포 URL(...exec)을 붙여넣으세요 (가이드 참고) */
+/* ⚠️ Apps Script 배포 URL(...exec) */
 const API = "https://script.google.com/macros/s/AKfycbxsCcgoNEDJRnfcl-rPXbuO7Mygm8qgK2pwuZMzyE7J7iJYFSrqIZ10EXaMUwmgqwRk4w/exec";
 function getKey() {
   const p = new URLSearchParams(location.search).get('k');
@@ -86,7 +77,7 @@ const CCY = {
   KRW: {
     color: ACCENT.krw,
     get unit() {
-      return LANG === 'en' ? '₩' : '원';
+      return LANG === 'en' ? '\u20A9' : '\uc6d0';
     }
   },
   LKR: {
@@ -96,101 +87,103 @@ const CCY = {
 };
 const DONUT = ["#3B5BDB", "#0CA678", "#E8590C", "#7048E8", "#E67700", "#1098AD", "#F03E3E", "#868E96"];
 const JEWEL = {
-  necklace: "📿",
-  ring: "💍",
-  bracelet: "⌚",
-  earring: "🧷",
-  other: "✨"
+  necklace: "\uD83D\uDCFF",
+  ring: "\uD83D\uDC8D",
+  bracelet: "\u231A",
+  earring: "\uD83E\uDDF7",
+  other: "\u2728"
 };
 const T = {
   ko: {
-    money: "돈",
-    assets: "자산",
-    debts: "빚",
-    settings: "설정",
-    spendable: "쓸 수 있는 돈 · 원화 환산",
-    krwSum: "원화 합계",
-    lkrSum: "루피 합계",
-    rateEdit: "환율 수정",
-    income: "수입",
-    expense: "지출",
-    left: "남은돈",
-    thisMonth: "이번 달",
-    accounts: "계좌",
-    recent: "최근 내역",
-    noTxn: "아직 내역이 없어요. + 로 첫 지출을 넣어보세요.",
-    overview: "전체 요약",
-    oMoney: "돈 (현금·은행)",
-    oAssets: "자산 (부동산·금 등)",
-    oLent: "빌려준 돈",
-    oDebt: "빚 (대출·할부)",
-    netW: "순자산",
-    totalValue: "평가액 합계",
-    totalPL: "총 손익",
-    addAsset: "+ 자산 추가",
-    addDebt: "+ 항목 추가",
-    profit: "이익",
-    loss: "손해",
-    invested: "투입",
-    recovered: "회수",
-    nowValue: "현재 평가액",
-    ret: "손익률",
-    realestate: "부동산",
-    gold: "금",
-    fd: "적금(FD)",
-    invest: "투자",
-    other: "기타",
-    principal: "원금",
-    rateY: "연이자율",
-    startDate: "가입일",
-    monthly: "월이자",
-    accrued: "지금까지 이자",
-    maturity: "만기수령(원금)",
-    loan: "대출",
-    installment: "할부",
-    lent: "빌려준 돈",
-    remain: "남은 금액",
-    darkmode: "다크 모드",
-    language: "언어",
-    exrate: "환율",
-    goldPrice: "금 시세 (24K 1g)",
-    cats: "지출 분류",
-    save: "저장",
-    cancel: "취소",
-    del: "삭제",
-    name: "이름",
-    currency: "통화",
-    inflow: "들어온 돈(회수)",
-    outflow: "나간 돈(투입)",
-    addFlow: "돈 흐름 추가",
-    memo: "메모(선택)",
-    amount: "금액",
-    whichIn: "어느 계좌로 들어와요?",
-    whichOut: "어느 계좌에서 나가요?",
-    category: "분류",
-    jType: "종류",
-    necklace: "목걸이",
-    ring: "반지",
-    bracelet: "팔찌",
-    earring: "귀걸이",
-    purity: "순도(K)",
-    weight: "무게(g)",
-    buyPrice: "구입가",
-    buyGold: "당시 금시세(24K 1g)",
-    pure: "순금 무게",
-    nowGold: "현재 금시세",
-    editStart: "시작잔액 수정",
-    install: "홈 화면에 설치",
-    loading: "불러오는 중…",
-    needKey: "링크로 접속해 주세요 (?k=…)",
-    badKey: "접속 키가 올바르지 않아요"
+    money: "\ub3c8",
+    assets: "\uc790\uc0b0",
+    debts: "\ube5a",
+    settings: "\uc124\uc815",
+    spendable: "\uc4f8 \uc218 \uc788\ub294 \ub3c8 \u00b7 \uc6d0\ud654 \ud658\uc0b0",
+    krwSum: "\uc6d0\ud654 \ud569\uacc4",
+    lkrSum: "\ub8e8\ud53c \ud569\uacc4",
+    rateEdit: "\ud658\uc728 \uc218\uc815",
+    income: "\uc218\uc785",
+    expense: "\uc9c0\ucd9c",
+    left: "\ub0a8\uc740\ub3c8",
+    thisMonth: "\uc774\ubc88 \ub2ec",
+    accounts: "\uacc4\uc88c",
+    recent: "\ucd5c\uadfc \ub0b4\uc5ed",
+    noTxn: "\uc544\uc9c1 \ub0b4\uc5ed\uc774 \uc5c6\uc5b4\uc694. + \ub85c \uccab \uc9c0\ucd9c\uc744 \ub123\uc5b4\ubcf4\uc138\uc694.",
+    overview: "\uc804\uccb4 \uc694\uc57d",
+    oMoney: "\ub3c8 (\ud604\uae08\u00b7\uc740\ud589)",
+    oAssets: "\uc790\uc0b0 (\ubd80\ub3d9\uc0b0\u00b7\uae08 \ub4f1)",
+    oLent: "\ube4c\ub824\uc900 \ub3c8",
+    oDebt: "\ube5a (\ub300\ucd9c\u00b7\ud560\ubd80)",
+    netW: "\uc21c\uc790\uc0b0",
+    totalValue: "\ud3c9\uac00\uc561 \ud569\uacc4",
+    totalPL: "\ucd1d \uc190\uc775",
+    addAsset: "+ \uc790\uc0b0 \ucd94\uac00",
+    addDebt: "+ \ud56d\ubaa9 \ucd94\uac00",
+    profit: "\uc774\uc775",
+    loss: "\uc190\ud574",
+    invested: "\ud22c\uc785",
+    recovered: "\ud68c\uc218",
+    nowValue: "\ud604\uc7ac \ud3c9\uac00\uc561",
+    ret: "\uc190\uc775\ub960",
+    realestate: "\ubd80\ub3d9\uc0b0",
+    gold: "\uae08",
+    fd: "\uc801\uae08(FD)",
+    invest: "\ud22c\uc790",
+    other: "\uae30\ud0c0",
+    principal: "\uc6d0\uae08",
+    rateY: "\uc5f0\uc774\uc790\uc728",
+    startDate: "\uac00\uc785\uc77c",
+    monthly: "\uc6d4\uc774\uc790",
+    accrued: "\uc9c0\uae08\uae4c\uc9c0 \uc774\uc790",
+    maturity: "\ub9cc\uae30\uc218\ub839(\uc6d0\uae08)",
+    loan: "\ub300\ucd9c",
+    installment: "\ud560\ubd80",
+    lent: "\ube4c\ub824\uc900 \ub3c8",
+    remain: "\ub0a8\uc740 \uae08\uc561",
+    pay: "\uac1a\uae30",
+    collect: "\ub3cc\ub824\ubc1b\uae30",
+    done: "\uc644\ub8cc",
+    darkmode: "\ub2e4\ud06c \ubaa8\ub4dc",
+    language: "\uc5b8\uc5b4",
+    exrate: "\ud658\uc728",
+    goldPrice: "\uae08 \uc2dc\uc138 (24K 1g)",
+    cats: "\uc9c0\ucd9c \ubd84\ub958",
+    save: "\uc800\uc7a5",
+    cancel: "\ucde8\uc18c",
+    del: "\uc0ad\uc81c",
+    name: "\uc774\ub984",
+    currency: "\ud1b5\ud654",
+    inflow: "\ub4e4\uc5b4\uc628 \ub3c8(\ud68c\uc218)",
+    outflow: "\ub098\uac04 \ub3c8(\ud22c\uc785)",
+    addFlow: "\ub3c8 \ud750\ub984 \ucd94\uac00",
+    memo: "\uba54\ubaa8(\uc120\ud0dd)",
+    amount: "\uae08\uc561",
+    whichIn: "\uc5b4\ub290 \uacc4\uc88c\ub85c \ub4e4\uc5b4\uc640\uc694?",
+    whichOut: "\uc5b4\ub290 \uacc4\uc88c\uc5d0\uc11c \ub098\uac00\uc694?",
+    category: "\ubd84\ub958",
+    jType: "\uc885\ub958",
+    necklace: "\ubaa9\uac78\uc774",
+    ring: "\ubc18\uc9c0",
+    bracelet: "\ud314\ucc0c",
+    earring: "\uadc0\uac78\uc774",
+    purity: "\uc21c\ub3c4(K)",
+    weight: "\ubb34\uac8c(g)",
+    buyPrice: "\uad6c\uc785\uac00",
+    buyGold: "\ub2f9\uc2dc \uae08\uc2dc\uc138(24K 1g)",
+    pure: "\uc21c\uae08 \ubb34\uac8c",
+    nowGold: "\ud604\uc7ac \uae08\uc2dc\uc138",
+    install: "\ud648 \ud654\uba74\uc5d0 \uc124\uce58",
+    loading: "\ubd88\ub7ec\uc624\ub294 \uc911\u2026",
+    needKey: "\ub9c1\ud06c\ub85c \uc811\uc18d\ud574 \uc8fc\uc138\uc694 (?k=\u2026)",
+    badKey: "\uc811\uc18d \ud0a4\uac00 \uc62c\ubc14\ub974\uc9c0 \uc54a\uc544\uc694"
   },
   en: {
     money: "Money",
     assets: "Assets",
     debts: "Debts",
     settings: "Settings",
-    spendable: "Spendable money · in KRW",
+    spendable: "Spendable money \u00b7 in KRW",
     krwSum: "KRW total",
     lkrSum: "LKR total",
     rateEdit: "Edit rate",
@@ -203,7 +196,7 @@ const T = {
     noTxn: "No records yet. Tap + to add your first expense.",
     overview: "Overview",
     oMoney: "Money (cash & bank)",
-    oAssets: "Assets (property, gold…)",
+    oAssets: "Assets (property, gold\u2026)",
     oLent: "Lent out",
     oDebt: "Debt (loans)",
     netW: "Net worth",
@@ -232,6 +225,9 @@ const T = {
     installment: "Installment",
     lent: "Lent out",
     remain: "Remaining",
+    pay: "Repay",
+    collect: "Collect",
+    done: "Done",
     darkmode: "Dark mode",
     language: "Language",
     exrate: "FX rate",
@@ -261,10 +257,9 @@ const T = {
     buyGold: "Gold price then (24K/g)",
     pure: "Pure gold",
     nowGold: "Gold price now",
-    editStart: "Edit start balance",
     install: "Install to home screen",
-    loading: "Loading…",
-    needKey: "Please open via your link (?k=…)",
+    loading: "Loading\u2026",
+    needKey: "Please open via your link (?k=\u2026)",
     badKey: "Access key is not valid"
   }
 };
@@ -312,7 +307,7 @@ function computePL(a, goldPrice) {
   };
 }
 function App() {
-  const [status, setStatus] = useState("loading"); // loading | need | bad | ready
+  const [status, setStatus] = useState("loading");
   const [dark_, setDark] = useState(false);
   const [lang, setLang] = useState("ko");
   const [user, setUser] = useState("");
@@ -335,6 +330,10 @@ function App() {
   const savingRef = React.useRef(false);
   const C = dark_ ? dark : light;
   const t = k => T[lang][k];
+  const changeLang = l => {
+    LANG = l;
+    setLang(l);
+  };
   const toKRW = (amt, ccy) => ccy === "LKR" ? Number(amt) * rate : Number(amt);
   async function load() {
     if (!API || API.indexOf("PASTE_") === 0) {
@@ -407,8 +406,6 @@ function App() {
     window.addEventListener('beforeinstallprompt', h);
     return () => window.removeEventListener('beforeinstallprompt', h);
   }, []);
-
-  // 뮤테이션 (서버 저장 후 새로고침)
   const mut = async (action, payload) => {
     await api(action, payload);
     await load();
@@ -454,7 +451,7 @@ function App() {
     className: "flex items-center justify-between mb-4"
   }, /*#__PURE__*/React.createElement("div", {
     className: "text-sm font-bold tracking-wide"
-  }, "MoneyBook · ", user), /*#__PURE__*/React.createElement("div", {
+  }, "MoneyBook \\u00b7 ", user), /*#__PURE__*/React.createElement("div", {
     className: "flex items-center gap-2"
   }, installEvt && /*#__PURE__*/React.createElement("button", {
     onClick: () => {
@@ -471,7 +468,7 @@ function App() {
     style: {
       background: C.chip
     }
-  }, dark_ ? "☀️" : "🌙"))), tab === "money" && /*#__PURE__*/React.createElement(Money, {
+  }, dark_ ? "\u2600\uFE0F" : "\uD83C\uDF19"))), tab === "money" && /*#__PURE__*/React.createElement(Money, {
     C,
     t,
     lang,
@@ -513,14 +510,14 @@ function App() {
     t,
     debts,
     onAdd: () => setModal("newDebt"),
-    onDel: id => mut('delDebt', {
-      id
+    onOpen: d => setModal({
+      debt: d
     })
   }), tab === "settings" && /*#__PURE__*/React.createElement(Settings, {
     C,
     t,
     lang,
-    setLang,
+    setLang: changeLang,
     dark_,
     setDark,
     rate,
@@ -545,13 +542,13 @@ function App() {
     className: "max-w-md mx-auto flex items-center justify-around px-2 py-2"
   }, /*#__PURE__*/React.createElement(Tab, {
     label: t("money"),
-    icon: "💵",
+    icon: "\\uD83D\\uDCB5",
     on: tab === "money",
     C: C,
     onClick: () => setTab("money")
   }), /*#__PURE__*/React.createElement(Tab, {
     label: t("assets"),
-    icon: "📈",
+    icon: "\\uD83D\\uDCC8",
     on: tab === "assets",
     C: C,
     onClick: () => setTab("assets")
@@ -563,13 +560,13 @@ function App() {
     }
   }, "+"), /*#__PURE__*/React.createElement(Tab, {
     label: t("debts"),
-    icon: "💳",
+    icon: "\\uD83D\\uDCB3",
     on: tab === "debts",
     C: C,
     onClick: () => setTab("debts")
   }), /*#__PURE__*/React.createElement(Tab, {
     label: t("settings"),
-    icon: "⚙️",
+    icon: "\\u2699\\uFE0F",
     on: tab === "settings",
     C: C,
     onClick: () => setTab("settings")
@@ -585,7 +582,7 @@ function App() {
       const dup = txns.find(z => String(z.date).slice(0, 10) === x.date && z.accountId === x.accountId && Number(z.amount) === Number(x.amount) && z.type === x.type && z.category === x.category);
       if (dup) {
         const who = dup.user ? ` (${dup.user})` : '';
-        const msg = lang === 'en' ? `A similar record already exists${who}. Add it anyway?` : `이미 비슷한 내역이 있어요${who}. 그래도 추가할까요?`;
+        const msg = lang === 'en' ? `A similar record already exists${who}. Add it anyway?` : `\uc774\ubbf8 \ube44\uc2b7\ud55c \ub0b4\uc5ed\uc774 \uc788\uc5b4\uc694${who}. \uadf8\ub798\ub3c4 \ucd94\uac00\ud560\uae4c\uc694?`;
         if (!confirm(msg)) return;
       }
       savingRef.current = true;
@@ -628,6 +625,23 @@ function App() {
     onSave: async d => {
       setModal(null);
       await mut('addDebt', d);
+    }
+  }), modal && modal.debt && /*#__PURE__*/React.createElement(DebtDetail, {
+    C,
+    t,
+    lang,
+    debt: modal.debt,
+    accounts,
+    onClose: () => setModal(null),
+    onPay: (debtId, pl) => mut('payDebt', {
+      debtId,
+      ...pl
+    }),
+    onDel: async id => {
+      setModal(null);
+      await mut('delDebt', {
+        id
+      });
     }
   }));
 }
@@ -730,7 +744,7 @@ function Money({
   }), CCY.KRW.unit) : /*#__PURE__*/React.createElement("button", {
     onClick: () => setEditRate(true),
     className: "underline underline-offset-2"
-  }, "1 Rs = ", rate, CCY.KRW.unit, " · ", t("rateEdit")))), /*#__PURE__*/React.createElement("div", {
+  }, "1 Rs = ", rate, CCY.KRW.unit, " \\u00b7 ", t("rateEdit")))), /*#__PURE__*/React.createElement("div", {
     className: "rounded-2xl p-4 mb-4 grid grid-cols-3",
     style: {
       background: C.card,
@@ -845,18 +859,17 @@ function Money({
         fontSize: 11,
         color: C.sub
       }
-    }, "✎"))), editAcc === a.id && /*#__PURE__*/React.createElement("div", {
+    }, "\\u270E"))), editAcc === a.id && /*#__PURE__*/React.createElement("div", {
       className: "mt-2 flex items-center gap-2"
     }, /*#__PURE__*/React.createElement("input", {
       type: "number",
       defaultValue: a.start,
-      className: "flex-1 px-2 py-1.5 rounded-lg text-sm",
+      className: "flex-1 min-w-0 px-2 py-1.5 rounded-lg text-sm",
       style: {
         border: `1px solid ${C.line}`,
         background: C.soft,
         color: C.ink
       },
-      placeholder: t("editStart"),
       onBlur: e => {
         onSetStart(a.id, parseFloat(e.target.value) || 0);
       }
@@ -893,24 +906,24 @@ function Money({
       className: "flex-1 min-w-0"
     }, /*#__PURE__*/React.createElement("div", {
       className: "text-sm font-medium truncate"
-    }, x.category, x.memo ? ` · ${x.memo}` : ""), /*#__PURE__*/React.createElement("div", {
+    }, x.category, x.memo ? ` \u00b7 ${x.memo}` : ""), /*#__PURE__*/React.createElement("div", {
       style: {
         fontSize: 11,
         color: C.sub
       }
-    }, String(x.date).slice(0, 10), " · ", a[lang])), /*#__PURE__*/React.createElement("div", {
+    }, String(x.date).slice(0, 10), " \\u00b7 ", a[lang])), /*#__PURE__*/React.createElement("div", {
       className: "text-sm font-semibold whitespace-nowrap",
       style: {
         color: pos ? ACCENT.income : ACCENT.expense,
         fontVariantNumeric: "tabular-nums"
       }
-    }, pos ? "+" : "−", fmt(x.amount), cur.unit), /*#__PURE__*/React.createElement("button", {
+    }, pos ? "+" : "\u2212", fmt(x.amount), cur.unit), /*#__PURE__*/React.createElement("button", {
       onClick: () => onDelTxn(x.id),
       className: "text-lg leading-none px-1",
       style: {
         color: C.line
       }
-    }, "×"));
+    }, "\\u00d7"));
   })), /*#__PURE__*/React.createElement(SectionLabel, {
     C: C
   }, t("overview")), /*#__PURE__*/React.createElement("div", {
@@ -1006,7 +1019,7 @@ function Assets({
       color: good ? ACCENT.good : ACCENT.bad,
       fontVariantNumeric: "tabular-nums"
     }
-  }, good ? "+" : "−", fmt(Math.abs(totalPL)), CCY.KRW.unit))), order.map(kind => {
+  }, good ? "+" : "\u2212", fmt(Math.abs(totalPL)), CCY.KRW.unit))), order.map(kind => {
     const items = assets.filter(a => a.kind === kind);
     if (!items.length) return null;
     return /*#__PURE__*/React.createElement("div", {
@@ -1036,7 +1049,7 @@ function Assets({
         }
       }, /*#__PURE__*/React.createElement("div", {
         className: "flex items-center gap-2"
-      }, a.kind === "gold" && /*#__PURE__*/React.createElement("span", null, JEWEL[a.jType] || "✨"), /*#__PURE__*/React.createElement("span", {
+      }, a.kind === "gold" && /*#__PURE__*/React.createElement("span", null, JEWEL[a.jType] || "\u2728"), /*#__PURE__*/React.createElement("span", {
         className: "font-bold px-1.5 py-0.5 rounded",
         style: {
           fontSize: 10,
@@ -1050,7 +1063,7 @@ function Assets({
           fontSize: 11,
           color: C.sub
         }
-      }, a.purity, "K · ", a.weight, "g")), /*#__PURE__*/React.createElement("div", {
+      }, a.purity, "K \\u00b7 ", a.weight, "g")), /*#__PURE__*/React.createElement("div", {
         className: "mt-3 rounded-xl p-3",
         style: {
           background: (g ? ACCENT.good : ACCENT.bad) + "12"
@@ -1073,7 +1086,7 @@ function Assets({
           color: g ? ACCENT.good : ACCENT.bad,
           fontVariantNumeric: "tabular-nums"
         }
-      }, g ? "+" : "−", fmt(Math.abs(p.pl)), /*#__PURE__*/React.createElement("span", {
+      }, g ? "+" : "\u2212", fmt(Math.abs(p.pl)), /*#__PURE__*/React.createElement("span", {
         className: "text-sm font-normal ml-0.5"
       }, cur.unit))), /*#__PURE__*/React.createElement("div", {
         className: "mt-3 grid grid-cols-3 text-center",
@@ -1141,7 +1154,7 @@ function AssetDetail({
     className: "flex items-center justify-between mb-3"
   }, /*#__PURE__*/React.createElement("span", {
     className: "text-base font-bold"
-  }, a.kind === "gold" ? `${JEWEL[a.jType] || "✨"} ` : "", a.name), /*#__PURE__*/React.createElement("button", {
+  }, a.kind === "gold" ? `${JEWEL[a.jType] || "\u2728"} ` : "", a.name), /*#__PURE__*/React.createElement("button", {
     onClick: () => onDel(a.id),
     className: "text-xs",
     style: {
@@ -1217,7 +1230,7 @@ function AssetDetail({
     type: "number",
     defaultValue: a.nowValue,
     onBlur: e => setNow(parseFloat(e.target.value) || 0),
-    className: "flex-1 px-3 py-2 rounded-lg text-sm",
+    className: "flex-1 min-w-0 px-3 py-2 rounded-lg text-sm",
     style: {
       background: C.soft,
       color: C.ink,
@@ -1250,7 +1263,7 @@ function AssetDetail({
     value: amt,
     onChange: e => setAmt(e.target.value),
     placeholder: t("amount"),
-    className: "flex-1 px-3 py-2 rounded-lg text-sm",
+    className: "flex-1 min-w-0 px-3 py-2 rounded-lg text-sm",
     style: {
       background: C.card,
       color: C.ink,
@@ -1260,7 +1273,7 @@ function AssetDetail({
     value: memo,
     onChange: e => setMemo(e.target.value),
     placeholder: t("memo"),
-    className: "flex-1 px-3 py-2 rounded-lg text-sm",
+    className: "flex-1 min-w-0 px-3 py-2 rounded-lg text-sm",
     style: {
       background: C.card,
       color: C.ink,
@@ -1281,12 +1294,12 @@ function AssetDetail({
     style: {
       color: C.sub
     }
-  }, f.dir === "out" ? t("invested") : t("recovered"), f.memo ? ` · ${f.memo}` : ""), /*#__PURE__*/React.createElement("span", {
+  }, f.dir === "out" ? t("invested") : t("recovered"), f.memo ? ` \u00b7 ${f.memo}` : ""), /*#__PURE__*/React.createElement("span", {
     style: {
       color: f.dir === "out" ? ACCENT.expense : ACCENT.income,
       fontVariantNumeric: "tabular-nums"
     }
-  }, f.dir === "out" ? "−" : "+", fmt(f.amount), cur.unit))))), /*#__PURE__*/React.createElement("div", {
+  }, f.dir === "out" ? "\u2212" : "+", fmt(f.amount), cur.unit))))), /*#__PURE__*/React.createElement("div", {
     className: "rounded-xl p-3 mt-3 flex items-center justify-between",
     style: {
       background: (p.pl >= 0 ? ACCENT.good : ACCENT.bad) + "12"
@@ -1302,14 +1315,14 @@ function AssetDetail({
       color: p.pl >= 0 ? ACCENT.good : ACCENT.bad,
       fontVariantNumeric: "tabular-nums"
     }
-  }, p.pl >= 0 ? "+" : "−", fmt(Math.abs(p.pl)), cur.unit)));
+  }, p.pl >= 0 ? "+" : "\u2212", fmt(Math.abs(p.pl)), cur.unit)));
 }
 function Debts({
   C,
   t,
   debts,
   onAdd,
-  onDel
+  onOpen
 }) {
   const label = {
     loan: t("loan"),
@@ -1334,14 +1347,16 @@ function Debts({
       border: `1px dashed ${C.line}`,
       color: C.sub
     }
-  }, "—") : /*#__PURE__*/React.createElement("div", {
+  }, "\\u2014") : /*#__PURE__*/React.createElement("div", {
     className: "space-y-2"
   }, debts.map(d => {
     const cur = CCY[d.currency];
     const lent = d.kind === "lent";
-    return /*#__PURE__*/React.createElement("div", {
+    const done = Number(d.remain) <= 0;
+    return /*#__PURE__*/React.createElement("button", {
       key: d.id,
-      className: "rounded-2xl p-4 flex items-center justify-between",
+      onClick: () => onOpen(d),
+      className: "w-full text-left rounded-2xl p-4 flex items-center justify-between",
       style: {
         background: C.card,
         border: `1px solid ${C.line}`
@@ -1351,29 +1366,148 @@ function Debts({
     }, d.name), /*#__PURE__*/React.createElement("div", {
       style: {
         fontSize: 11,
-        color: C.sub
+        color: done ? ACCENT.good : C.sub
       }
-    }, label[d.kind])), /*#__PURE__*/React.createElement("div", {
-      className: "flex items-center gap-3"
-    }, /*#__PURE__*/React.createElement("div", {
+    }, label[d.kind], done ? ` \u00b7 \u2713 ${t("done")}` : "")), /*#__PURE__*/React.createElement("div", {
       className: "text-lg font-bold",
       style: {
-        color: lent ? ACCENT.income : ACCENT.expense,
+        color: done ? C.sub : lent ? ACCENT.income : ACCENT.expense,
         fontVariantNumeric: "tabular-nums"
       }
-    }, lent ? "+" : "−", fmt(d.remain), /*#__PURE__*/React.createElement("span", {
+    }, lent ? "+" : "\u2212", fmt(d.remain), /*#__PURE__*/React.createElement("span", {
       className: "text-xs font-normal ml-0.5",
       style: {
         color: C.sub
       }
-    }, cur.unit)), /*#__PURE__*/React.createElement("button", {
-      onClick: () => onDel(d.id),
-      className: "text-lg",
-      style: {
-        color: C.line
-      }
-    }, "×")));
+    }, cur.unit)));
   })));
+}
+function DebtDetail({
+  C,
+  t,
+  lang,
+  debt,
+  accounts,
+  onPay,
+  onDel,
+  onClose
+}) {
+  const [d, setD] = useState(debt);
+  const isLent = d.kind === "lent";
+  const cur = CCY[d.currency];
+  const accts = accounts.filter(a => a.currency === d.currency);
+  const [amt, setAmt] = useState("");
+  const [accountId, setAccountId] = useState(accts[0] ? accts[0].id : "");
+  const [sent, setSent] = useState(false);
+  const done = Number(d.remain) <= 0;
+  const act = isLent ? t("collect") : t("pay");
+  const label = {
+    loan: t("loan"),
+    installment: t("installment"),
+    lent: t("lent")
+  };
+  const submit = () => {
+    if (sent || !(parseFloat(amt) > 0) || !accountId) return;
+    setSent(true);
+    setD({
+      ...d,
+      remain: Math.max(0, Number(d.remain) - parseFloat(amt))
+    });
+    onPay(d.id, {
+      amount: parseFloat(amt),
+      accountId,
+      kind: d.kind,
+      category: d.name,
+      memo: act,
+      date: today()
+    });
+    setTimeout(onClose, 300);
+  };
+  return /*#__PURE__*/React.createElement(Sheet, {
+    C: C,
+    onClose: onClose
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "flex items-center justify-between mb-3"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "text-base font-bold"
+  }, d.name), /*#__PURE__*/React.createElement("button", {
+    onClick: () => onDel(d.id),
+    className: "text-xs",
+    style: {
+      color: ACCENT.bad
+    }
+  }, t("del"))), /*#__PURE__*/React.createElement("div", {
+    className: "rounded-2xl p-4 mb-3 text-center",
+    style: {
+      background: C.soft
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 11,
+      color: C.sub
+    }
+  }, label[d.kind], " \\u00b7 ", t("remain")), /*#__PURE__*/React.createElement("div", {
+    className: "text-2xl font-bold mt-0.5",
+    style: {
+      color: done ? ACCENT.good : isLent ? ACCENT.income : ACCENT.expense,
+      fontVariantNumeric: "tabular-nums"
+    }
+  }, fmt(d.remain), cur.unit), done && /*#__PURE__*/React.createElement("div", {
+    className: "text-xs font-semibold mt-1",
+    style: {
+      color: ACCENT.good
+    }
+  }, "\\u2713 ", t("done"))), !done && /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("div", {
+    className: "rounded-2xl px-4 py-3 mb-3 flex items-end gap-2",
+    style: {
+      background: C.soft
+    }
+  }, /*#__PURE__*/React.createElement("input", {
+    autoFocus: true,
+    type: "number",
+    inputMode: "numeric",
+    value: amt,
+    onChange: e => setAmt(e.target.value),
+    placeholder: "0",
+    className: "flex-1 min-w-0 bg-transparent text-3xl font-bold outline-none",
+    style: {
+      color: C.ink,
+      fontVariantNumeric: "tabular-nums"
+    }
+  }), /*#__PURE__*/React.createElement("span", {
+    className: "text-lg mb-1",
+    style: {
+      color: C.sub
+    }
+  }, cur.unit)), /*#__PURE__*/React.createElement("div", {
+    className: "mb-3"
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 12,
+      color: C.sub
+    },
+    className: "mb-1.5"
+  }, isLent ? t("whichIn") : t("whichOut")), /*#__PURE__*/React.createElement("div", {
+    className: "grid grid-cols-2 gap-1.5"
+  }, accts.map(a => {
+    const on = a.id === accountId;
+    return /*#__PURE__*/React.createElement("button", {
+      key: a.id,
+      onClick: () => setAccountId(a.id),
+      className: "py-2 rounded-lg text-xs font-medium text-left px-2.5",
+      style: {
+        background: on ? C.ink : C.chip,
+        color: on ? "#fff" : C.ink
+      }
+    }, a[lang]);
+  }))), /*#__PURE__*/React.createElement("button", {
+    onClick: submit,
+    disabled: !(parseFloat(amt) > 0) || sent,
+    className: "w-full py-3 rounded-xl text-sm font-semibold text-white",
+    style: {
+      background: parseFloat(amt) > 0 && !sent ? C.ink : "#B9C6C2"
+    }
+  }, act)));
 }
 function Settings({
   C,
@@ -1410,16 +1544,13 @@ function Settings({
     className: "flex gap-1"
   }, ["ko", "en"].map(l => /*#__PURE__*/React.createElement("button", {
     key: l,
-    onClick: () => {
-      LANG = l;
-      setLang(l);
-    },
+    onClick: () => setLang(l),
     className: "px-3 py-1 rounded-full text-xs font-semibold",
     style: {
       background: lang === l ? C.ink : C.chip,
       color: lang === l ? "#fff" : C.sub
     }
-  }, l === "ko" ? "한국어" : "EN")))), /*#__PURE__*/React.createElement(SettingRow, {
+  }, l === "ko" ? "\ud55c\uad6d\uc5b4" : "EN")))), /*#__PURE__*/React.createElement(SettingRow, {
     C: C,
     label: t("exrate")
   }, /*#__PURE__*/React.createElement("span", {
@@ -1436,7 +1567,7 @@ function Settings({
     }
   }), CCY.KRW.unit)), /*#__PURE__*/React.createElement(SettingRow, {
     C: C,
-    label: `${t("goldPrice")} · ${CCY.KRW.unit}`
+    label: `${t("goldPrice")} \u00b7 ${CCY.KRW.unit}`
   }, /*#__PURE__*/React.createElement("input", {
     type: "number",
     defaultValue: goldPrice.KRW,
@@ -1452,7 +1583,7 @@ function Settings({
     }
   })), /*#__PURE__*/React.createElement(SettingRow, {
     C: C,
-    label: `${t("goldPrice")} · Rs`,
+    label: `${t("goldPrice")} \u00b7 Rs`,
     last: true
   }, /*#__PURE__*/React.createElement("input", {
     type: "number",
@@ -1539,7 +1670,7 @@ function TxForm({
     value: amount,
     onChange: e => setAmount(e.target.value),
     placeholder: "0",
-    className: "flex-1 bg-transparent text-3xl font-bold outline-none",
+    className: "flex-1 min-w-0 bg-transparent text-3xl font-bold outline-none",
     style: {
       color: C.ink,
       fontVariantNumeric: "tabular-nums"
@@ -1597,7 +1728,7 @@ function TxForm({
     value: memo,
     onChange: e => setMemo(e.target.value),
     placeholder: t("memo"),
-    className: "flex-1 px-3 py-2 rounded-lg text-sm outline-none",
+    className: "flex-1 min-w-0 px-3 py-2 rounded-lg text-sm outline-none",
     style: {
       background: C.soft,
       color: C.ink
@@ -1965,7 +2096,7 @@ function Sheet({
     },
     onClick: onClose
   }, /*#__PURE__*/React.createElement("div", {
-    className: "w-full max-w-md mx-auto rounded-t-3xl p-5 pb-8 overflow-y-auto",
+    className: "w-full max-w-md rounded-t-3xl p-5 pb-8 overflow-y-auto",
     style: {
       background: C.card,
       color: C.ink,
@@ -2111,7 +2242,7 @@ function OverRow({
       fontVariantNumeric: "tabular-nums",
       color: neg ? ACCENT.expense : C.ink
     }
-  }, neg ? "−" : "", fmt(Math.abs(v)), CCY.KRW.unit));
+  }, neg ? "\u2212" : "", fmt(Math.abs(v)), CCY.KRW.unit));
 }
 function SectionLabel({
   C,
@@ -2201,9 +2332,5 @@ function Row({
 }
 ReactDOM.createRoot(document.getElementById('root')).render(/*#__PURE__*/React.createElement(App, null));
 </script>
-
-<script>
-if('serviceWorker' in navigator){ window.addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{})); }
-</script>
-</body>
-</html>
+<script>if('serviceWorker' in navigator){ window.addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{})); }</script>
+</body></html>
