@@ -165,6 +165,12 @@ function handle(k, action, d){
       case 'addDebt': {
         var did = newId();
         appendObj('Debts', { id:did, kind:d.kind, name:d.name, currency:d.currency, remain:Number(d.remain) });
+        // 등록 시 계좌 자동연동: 빌려준돈=계좌 출금, 대출=계좌 입금 (할부는 변동 없음)
+        if(d.accountId && (d.kind==='lent' || d.kind==='loan')){
+          appendObj('Txns', { id:newId(), date:d.date||new Date().toISOString().slice(0,10),
+            type: d.kind==='lent'?'expense':'income', accountId:d.accountId, amount:Number(d.remain),
+            category:d.name, memo:d.memo||'', user:u.name, createdAt:new Date().toISOString() });
+        }
         return json({ ok:true, id:did });
       }
       case 'delDebt': deleteById('Debts', d.id); return json({ ok:true });
