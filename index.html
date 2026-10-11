@@ -148,6 +148,11 @@ const T = {
     lendMore: "더 빌려주기",
     borrowMore: "더 빌리기",
     addMore: "추가",
+    moveQ: "이 돈이 지금 생긴 거예요?",
+    moveYes: "지금 생김",
+    moveNo: "예전 거 · 기록만",
+    moveHintNow: "통장에 자동 반영돼요",
+    moveHintPast: "통장은 그대로, 빚 금액만 기록해요",
     done: "완료",
     darkmode: "다크 모드",
     language: "언어",
@@ -224,6 +229,11 @@ const T = {
     lendMore: "Lend more",
     borrowMore: "Borrow more",
     addMore: "Add",
+    moveQ: "Is this happening now?",
+    moveYes: "Happening now",
+    moveNo: "Past · record only",
+    moveHintNow: "Auto-applied to your account",
+    moveHintPast: "Account untouched, records the balance only",
     done: "Done",
     darkmode: "Dark mode",
     language: "Language",
@@ -1937,7 +1947,9 @@ function DebtForm({
   const [currency, setCurrency] = useState(defCcy || "KRW");
   const [remain, setRemain] = useState("");
   const [accountId, setAccountId] = useState("");
-  const needAcc = kind === "lent" || kind === "loan";
+  const [reflect, setReflect] = useState(true); // true=지금 생김(계좌 반영), false=예전 거(기록만)
+  const canReflect = kind === "lent" || kind === "loan";
+  const needAcc = canReflect && reflect;
   const accts = (accounts || []).filter(a => a.currency === currency);
   const valid = name && parseFloat(remain) > 0 && (!needAcc || accountId);
   const kinds = [["loan", t("loan")], ["installment", t("installment")], ["lent", t("lent")]];
@@ -2013,7 +2025,35 @@ function DebtForm({
       color: C.ink,
       border: `1px solid ${C.line}`
     }
-  })), needAcc && /*#__PURE__*/React.createElement(Field, {
+  })), canReflect && /*#__PURE__*/React.createElement(Field, {
+    C: C,
+    label: t("moveQ")
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "grid grid-cols-2 gap-1.5"
+  }, /*#__PURE__*/React.createElement("button", {
+    onClick: () => setReflect(true),
+    className: "py-2 rounded-lg text-xs font-semibold",
+    style: {
+      background: reflect ? C.ink : C.chip,
+      color: reflect ? "#fff" : C.sub
+    }
+  }, t("moveYes")), /*#__PURE__*/React.createElement("button", {
+    onClick: () => {
+      setReflect(false);
+      setAccountId("");
+    },
+    className: "py-2 rounded-lg text-xs font-semibold",
+    style: {
+      background: !reflect ? C.ink : C.chip,
+      color: !reflect ? "#fff" : C.sub
+    }
+  }, t("moveNo"))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 11,
+      color: C.sub
+    },
+    className: "mt-1"
+  }, reflect ? t("moveHintNow") : t("moveHintPast"))), needAcc && /*#__PURE__*/React.createElement(Field, {
     C: C,
     label: kind === "lent" ? t("whichOut") : t("whichIn")
   }, /*#__PURE__*/React.createElement("div", {
