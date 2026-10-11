@@ -17,7 +17,6 @@ const ACCENT = { income:"#0CA678", expense:"#E8590C", krw:"#3B5BDB", lkr:"#E6770
 const light = { bg:"#E9EFED", card:"#FFFFFF", ink:"#13312E", sub:"#5C736F", line:"#DBE4E1", soft:"#F5F7F6", chip:"#F1F4F3", hero1:"#13312E", hero2:"#1E4B45" };
 const dark  = { bg:"#0E1A18", card:"#16241F", ink:"#EAF2EF", sub:"#8FA6A0", line:"#243530", soft:"#12201C", chip:"#1C2C27", hero1:"#0B1614", hero2:"#123833" };
 let LANG='ko';
-<<<<<<< HEAD
 const CCY = { KRW:{unit:"원",color:ACCENT.krw}, LKR:{unit:"Rs",color:ACCENT.lkr} };
 const DONUT = ["#3B5BDB","#0CA678","#E8590C","#7048E8","#E67700","#1098AD","#F03E3E","#868E96"];
 const FLAG = { KR:"🇰🇷", LK:"🇱🇰" };
@@ -26,24 +25,12 @@ const CCYOF = { KR:"KRW", LK:"LKR" };
 const T = {
  ko:{ money:"돈",assets:"자산",debts:"빚",settings:"설정",spendable:"쓸 수 있는 돈",kr:"한국",lk:"스리랑카",income:"수입",expense:"지출",left:"남은돈",thisMonth:"이번 달",trend:"월별 추이 (6개월)",accounts:"계좌",recent:"최근 내역",noTxn:"아직 내역이 없어요. + 로 첫 지출을 넣어보세요.",overview:"전체 요약",oMoney:"돈 (현금·은행)",oAssets:"자산 (부동산·금 등)",oLent:"빌려준 돈",oDebt:"빚 (대출·할부)",netW:"순자산",totalValue:"평가액 합계",totalPL:"총 손익",addAsset:"+ 자산 추가",addDebt:"+ 항목 추가",profit:"이익",loss:"손해",nowValue:"현재 가치",ret:"손익률",realestate:"부동산",gold:"금",fd:"적금(FD)",invest:"투자",other:"기타",principal:"원금",rateY:"연이자율",startDate:"가입일",monthly:"월이자",accrued:"지금까지 이자",maturity:"만기수령(원금)",buyDate:"구입일",buyPrice:"산 금액",nowValueHint:"비워두면 산 금액과 같아요",loan:"대출",installment:"할부",lent:"빌려준 돈",remain:"남은 금액",amtLent:"빌려준 금액",amtLoan:"빌린 금액",pay:"갚기",collect:"돌려받기",lendMore:"더 빌려주기",borrowMore:"더 빌리기",addMore:"추가",done:"완료",darkmode:"다크 모드",language:"언어",exrate:"환율",cats:"지출 분류",save:"저장",cancel:"취소",del:"삭제",name:"이름",currency:"통화",amount:"금액",memo:"메모(선택)",whichIn:"어느 계좌로 들어와요?",whichOut:"어느 계좌에서 나가요?",category:"분류",install:"홈 화면에 설치",loading:"불러오는 중…",needKey:"링크로 접속해 주세요 (?k=…)",badKey:"접속 키가 올바르지 않아요",noDebt:"항목이 없어요. + 로 추가하세요." },
  en:{ money:"Money",assets:"Assets",debts:"Debts",settings:"Settings",spendable:"Spendable money",kr:"Korea",lk:"Sri Lanka",income:"Income",expense:"Expense",left:"Left",thisMonth:"This month",trend:"Monthly trend (6 mo)",accounts:"Accounts",recent:"Recent",noTxn:"No records yet. Tap + to add your first expense.",overview:"Overview",oMoney:"Money (cash & bank)",oAssets:"Assets (property, gold…)",oLent:"Lent out",oDebt:"Debt (loans)",netW:"Net worth",totalValue:"Total value",totalPL:"Total P/L",addAsset:"+ Add asset",addDebt:"+ Add item",profit:"Profit",loss:"Loss",nowValue:"Current value",ret:"Return",realestate:"Real estate",gold:"Gold",fd:"Fixed deposit",invest:"Investment",other:"Other",principal:"Principal",rateY:"Annual rate",startDate:"Start date",monthly:"Monthly interest",accrued:"Interest so far",maturity:"At maturity",buyDate:"Buy date",buyPrice:"Bought for",nowValueHint:"Leave empty = same as bought",loan:"Loan",installment:"Installment",lent:"Lent out",remain:"Remaining",amtLent:"Amount lent",amtLoan:"Amount borrowed",pay:"Repay",collect:"Collect",lendMore:"Lend more",borrowMore:"Borrow more",addMore:"Add",done:"Done",darkmode:"Dark mode",language:"Language",exrate:"FX rate",cats:"Expense categories",save:"Save",cancel:"Cancel",del:"Delete",name:"Name",currency:"Currency",amount:"Amount",memo:"Memo (optional)",whichIn:"Into which account?",whichOut:"From which account?",category:"Category",install:"Install to home screen",loading:"Loading…",needKey:"Please open via your link (?k=…)",badKey:"Access key is not valid",noDebt:"No items. Tap + to add." }
-=======
-const CCY = { KRW:{color:ACCENT.krw, get unit(){return LANG==='en'?'\u20A9':'원';}}, LKR:{unit:"Rs",color:ACCENT.lkr} };
-const DONUT = ["#3B5BDB","#0CA678","#E8590C","#7048E8","#E67700","#1098AD","#F03E3E","#868E96"];
-
-const T = {
- ko:{ money:"돈",assets:"자산",debts:"빚",settings:"설정",spendable:"쓸 수 있는 돈",kr:"한국",lk:"스리랑카",rateEdit:"환율 수정",income:"수입",expense:"지출",left:"남은돈",thisMonth:"이번 달",trend:"월별 추이 (6개월)",accounts:"계좌",recent:"최근 내역",noTxn:"아직 내역이 없어요. + 로 첫 지출을 넣어보세요.",overview:"전체 요약",oMoney:"돈 (현금·은행)",oAssets:"자산 (부동산·금 등)",oLent:"빌려준 돈",oDebt:"빚 (대출·할부)",netW:"순자산",totalValue:"평가액 합계",totalPL:"총 손익",addAsset:"+ 자산 추가",addDebt:"+ 항목 추가",profit:"이익",loss:"손해",nowValue:"현재 가치",ret:"손익률",realestate:"부동산",gold:"금",fd:"적금(FD)",invest:"투자",other:"기타",principal:"원금",rateY:"연이자율",startDate:"가입일",monthly:"월이자",accrued:"지금까지 이자",maturity:"만기수령(원금)",buyDate:"구입일",buyPrice:"산 금액",nowValueHint:"비워두면 산 금액과 같아요",loan:"대출",installment:"할부",lent:"빌려준 돈",remain:"남은 금액",amtLent:"빌려준 금액",amtLoan:"빌린 금액",pay:"갚기",collect:"돌려받기",done:"완료",darkmode:"다크 모드",language:"언어",exrate:"환율",cats:"지출 분류",save:"저장",cancel:"취소",del:"삭제",name:"이름",currency:"통화",amount:"금액",memo:"메모(선택)",whichIn:"어느 계좌로 들어와요?",whichOut:"어느 계좌에서 나가요?",category:"분류",install:"홈 화면에 설치",loading:"불러오는 중\u2026",needKey:"링크로 접속해 주세요 (?k=\u2026)",badKey:"접속 키가 올바르지 않아요" },
- en:{ money:"Money",assets:"Assets",debts:"Debts",settings:"Settings",spendable:"Spendable money",kr:"Korea",lk:"Sri Lanka",rateEdit:"Edit rate",income:"Income",expense:"Expense",left:"Left",thisMonth:"This month",trend:"Monthly trend (6 mo)",accounts:"Accounts",recent:"Recent",noTxn:"No records yet. Tap + to add your first expense.",overview:"Overview",oMoney:"Money (cash & bank)",oAssets:"Assets (property, gold\u2026)",oLent:"Lent out",oDebt:"Debt (loans)",netW:"Net worth",totalValue:"Total value",totalPL:"Total P/L",addAsset:"+ Add asset",addDebt:"+ Add item",profit:"Profit",loss:"Loss",nowValue:"Current value",ret:"Return",realestate:"Real estate",gold:"Gold",fd:"Fixed deposit",invest:"Investment",other:"Other",principal:"Principal",rateY:"Annual rate",startDate:"Start date",monthly:"Monthly interest",accrued:"Interest so far",maturity:"At maturity",buyDate:"Buy date",buyPrice:"Bought for",nowValueHint:"Leave empty = same as bought",loan:"Loan",installment:"Installment",lent:"Lent out",remain:"Remaining",amtLent:"Amount lent",amtLoan:"Amount borrowed",pay:"Repay",collect:"Collect",done:"Done",darkmode:"Dark mode",language:"Language",exrate:"FX rate",cats:"Expense categories",save:"Save",cancel:"Cancel",del:"Delete",name:"Name",currency:"Currency",amount:"Amount",memo:"Memo (optional)",whichIn:"Into which account?",whichOut:"From which account?",category:"Category",install:"Install to home screen",loading:"Loading\u2026",needKey:"Please open via your link (?k=\u2026)",badKey:"Access key is not valid" }
->>>>>>> 006e2de31a9e35b7fba83f7deed8e61d5a4e458e
 };
 
 const fmt = (n)=> Math.round(Number(n)||0).toLocaleString("en-US");
 const today = ()=> new Date().toISOString().slice(0,10);
 const monthsBetween = (d)=>{ if(!d) return 0; const a=new Date(d), b=new Date(); return Math.max(0,(b.getFullYear()-a.getFullYear())*12+(b.getMonth()-a.getMonth())); };
-<<<<<<< HEAD
 const monthKey = (y,m)=> y + '-' + String(m+1).padStart(2,'0');
-=======
-const monthKey = (y,m)=> y + '-' + String(m+1).padStart(2,'0');  // m: 0-index
->>>>>>> 006e2de31a9e35b7fba83f7deed8e61d5a4e458e
 const ymLabel = (key)=>{ const [y,m]=key.split('-'); return LANG==='en' ? new Date(Number(y),Number(m)-1,1).toLocaleString('en-US',{month:'short'})+' '+y : y+'년 '+Number(m)+'월'; };
 
 function computePL(a){
@@ -102,7 +89,6 @@ function App(){
   const saveSetting = (key,value)=> api('saveSetting',{key,value});
 
   const balanceOf=(id)=>{ const acc=accounts.find(a=>a.id===id)||{start:0}; const d=txns.filter(x=>x.accountId===id).reduce((s,x)=>s+(x.type==="income"?Number(x.amount):-Number(x.amount)),0); return Number(acc.start)+d; };
-<<<<<<< HEAD
 
   // ── 선택한 나라(통화)만 ── 환율 변환 없음
   const accountsC = accounts.filter(a=>a.currency===ccy);
@@ -113,15 +99,6 @@ function App(){
   const lentC = debtsC.filter(d=>d.kind==="lent").reduce((s,d)=>s+Number(d.remain),0);
   const oweC  = debtsC.filter(d=>d.kind!=="lent").reduce((s,d)=>s+Number(d.remain),0);
   const netC  = cashC + assetsValueC + lentC - oweC;
-=======
-  const krwCash=accounts.filter(a=>a.currency==="KRW").reduce((s,a)=>s+balanceOf(a.id),0);
-  const lkrCash=accounts.filter(a=>a.currency==="LKR").reduce((s,a)=>s+balanceOf(a.id),0);
-  const moneyKRW=krwCash+lkrCash*rate;
-  const assetsKRW=assets.reduce((s,a)=>s+toKRW(computePL(a).current,a.currency),0);
-  const lentKRW=debts.filter(d=>d.kind==="lent").reduce((s,d)=>s+toKRW(d.remain,d.currency),0);
-  const oweKRW=debts.filter(d=>d.kind!=="lent").reduce((s,d)=>s+toKRW(d.remain,d.currency),0);
-  const netWorth=moneyKRW+assetsKRW+lentKRW-oweKRW;
->>>>>>> 006e2de31a9e35b7fba83f7deed8e61d5a4e458e
 
   if(status==="loading") return <Center C={light}>{T.ko.loading}</Center>;
   if(status==="need")   return <Center C={light}>{T.ko.needKey}</Center>;
@@ -130,11 +107,7 @@ function App(){
   return (
     <div style={{background:C.bg,minHeight:"100vh",color:C.ink,fontFamily:"'Apple SD Gothic Neo','Noto Sans KR',sans-serif"}} className="w-full">
       <div className="max-w-md mx-auto px-4 pt-5 pb-28">
-<<<<<<< HEAD
         <div className="flex items-center justify-between mb-3">
-=======
-        <div className="flex items-center justify-between mb-4">
->>>>>>> 006e2de31a9e35b7fba83f7deed8e61d5a4e458e
           <div className="text-sm font-bold tracking-wide">MoneyBook · {user}</div>
           <div className="flex items-center gap-2">
             {installEvt && <button onClick={()=>{installEvt.prompt(); setInstallEvt(null);}} className="text-xs px-2.5 py-1 rounded-full font-semibold text-white" style={{background:C.ink}}>{t("install")}</button>}
@@ -142,7 +115,6 @@ function App(){
           </div>
         </div>
 
-<<<<<<< HEAD
         {/* 나라 전환 — 화면 전체(돈·자산·빚)를 이 나라로 분리 */}
         <div className="grid grid-cols-2 gap-1.5 mb-4 p-1 rounded-2xl" style={{background:C.chip}}>
           {["KR","LK"].map(cc=>{ const on=country===cc; return (
@@ -154,11 +126,6 @@ function App(){
         {tab==="money" && <Money {...{C,t,lang,country,ccy,unit,accounts:accountsC,balanceOf,txns,cashC,assetsValueC,lentC,oweC,netC,onSetStart:(accountId,start)=>mut('setStart',{accountId,start}),onDelTxn:(id)=>mut('delTxn',{id})}} />}
         {tab==="assets" && <Assets {...{C,t,unit,assets:assetsC,onAdd:()=>setModal("newAsset"),onOpen:(a)=>setModal({asset:a})}} />}
         {tab==="debts" && <Debts {...{C,t,debts:debtsC,onAdd:()=>setModal("newDebt"),onOpen:(d)=>setModal({debt:d})}} />}
-=======
-        {tab==="money" && <Money {...{C,t,lang,rate,setRate:(v)=>{setRate(v);saveSetting('rate',v);},krwCash,lkrCash,moneyKRW,accounts,balanceOf,txns,toKRW,assetsKRW,lentKRW,oweKRW,netWorth,onSetStart:(accountId,start)=>mut('setStart',{accountId,start}),onDelTxn:(id)=>mut('delTxn',{id})}} />}
-        {tab==="assets" && <Assets {...{C,t,assets,toKRW,onAdd:()=>setModal("newAsset"),onOpen:(a)=>setModal({asset:a})}} />}
-        {tab==="debts" && <Debts {...{C,t,debts,onAdd:()=>setModal("newDebt"),onOpen:(d)=>setModal({debt:d})}} />}
->>>>>>> 006e2de31a9e35b7fba83f7deed8e61d5a4e458e
         {tab==="settings" && <Settings {...{C,t,lang,setLang:changeLang,dark_,setDark,rate,setRate:(v)=>{setRate(v);saveSetting('rate',v);},cats}} />}
       </div>
 
@@ -172,24 +139,15 @@ function App(){
         </div>
       </div>
 
-<<<<<<< HEAD
       {modal==="tx" && <TxForm {...{C,t,lang,accounts:accountsC,unit,cats}} onClose={()=>setModal(null)} onSave={async(x)=>{ if(savingRef.current)return; const dup=txns.find(z=>String(z.date).slice(0,10)===x.date&&z.accountId===x.accountId&&Number(z.amount)===Number(x.amount)&&z.type===x.type&&z.category===x.category); if(dup){ const who=dup.user?` (${dup.user})`:''; const msg=lang==='en'?`A similar record already exists${who}. Add it anyway?`:`이미 비슷한 내역이 있어요${who}. 그래도 추가할까요?`; if(!confirm(msg))return; } savingRef.current=true; setModal(null); await mut('addTxn',x); savingRef.current=false; }} />}
       {modal==="newAsset" && <AssetForm {...{C,t,defCcy:ccy}} onClose={()=>setModal(null)} onSave={async(a)=>{ setModal(null); await mut('addAsset',a); }} />}
       {modal&&modal.asset && <AssetDetail {...{C,t,asset:modal.asset}} onClose={()=>setModal(null)} onNow={(id,nowValue)=>mut('updateAsset',{id,nowValue})} onDel={async(id)=>{ setModal(null); await mut('delAsset',{id}); }} />}
       {modal==="newDebt" && <DebtForm {...{C,t,lang,accounts:accountsC,defCcy:ccy}} onClose={()=>setModal(null)} onSave={async(d)=>{ setModal(null); await mut('addDebt',d); }} />}
       {modal&&modal.debt && <DebtDetail {...{C,t,lang,debt:modal.debt,accounts}} onClose={()=>setModal(null)} onPay={(debtId,pl)=>mut('payDebt',{debtId,...pl})} onGrow={(debtId,pl)=>mut('growDebt',{debtId,...pl})} onDel={async(id)=>{ setModal(null); await mut('delDebt',{id}); }} />}
-=======
-      {modal==="tx" && <TxForm {...{C,t,lang,accounts,cats}} onClose={()=>setModal(null)} onSave={async(x)=>{ if(savingRef.current)return; const dup=txns.find(z=>String(z.date).slice(0,10)===x.date&&z.accountId===x.accountId&&Number(z.amount)===Number(x.amount)&&z.type===x.type&&z.category===x.category); if(dup){ const who=dup.user?` (${dup.user})`:''; const msg=lang==='en'?`A similar record already exists${who}. Add it anyway?`:`이미 비슷한 내역이 있어요${who}. 그래도 추가할까요?`; if(!confirm(msg))return; } savingRef.current=true; setModal(null); await mut('addTxn',x); savingRef.current=false; }} />}
-      {modal==="newAsset" && <AssetForm {...{C,t}} onClose={()=>setModal(null)} onSave={async(a)=>{ setModal(null); await mut('addAsset',a); }} />}
-      {modal&&modal.asset && <AssetDetail {...{C,t,asset:modal.asset}} onClose={()=>setModal(null)} onNow={(id,nowValue)=>mut('updateAsset',{id,nowValue})} onDel={async(id)=>{ setModal(null); await mut('delAsset',{id}); }} />}
-      {modal==="newDebt" && <DebtForm {...{C,t,lang,accounts}} onClose={()=>setModal(null)} onSave={async(d)=>{ setModal(null); await mut('addDebt',d); }} />}
-      {modal&&modal.debt && <DebtDetail {...{C,t,lang,debt:modal.debt,accounts}} onClose={()=>setModal(null)} onPay={(debtId,pl)=>mut('payDebt',{debtId,...pl})} onDel={async(id)=>{ setModal(null); await mut('delDebt',{id}); }} />}
->>>>>>> 006e2de31a9e35b7fba83f7deed8e61d5a4e458e
     </div>
   );
 }
 
-<<<<<<< HEAD
 function Money({C,t,lang,country,ccy,unit,accounts,balanceOf,txns,cashC,assetsValueC,lentC,oweC,netC,onSetStart,onDelTxn}){
   const [editAcc,setEditAcc]=useState(null);
   const nowKey=today().slice(0,7);
@@ -203,25 +161,10 @@ function Money({C,t,lang,country,ccy,unit,accounts,balanceOf,txns,cashC,assetsVa
   const inc=mtx.filter(x=>x.type==="income").reduce((s,x)=>s+Number(x.amount),0);
   const exp=mtx.filter(x=>x.type==="expense").reduce((s,x)=>s+Number(x.amount),0);
   const byCat={}; mtx.filter(x=>x.type==="expense").forEach(x=>{ byCat[x.category]=(byCat[x.category]||0)+Number(x.amount); });
-=======
-function Money({C,t,lang,rate,setRate,krwCash,lkrCash,moneyKRW,accounts,balanceOf,txns,toKRW,assetsKRW,lentKRW,oweKRW,netWorth,onSetStart,onDelTxn}){
-  const [editRate,setEditRate]=useState(false);
-  const [editAcc,setEditAcc]=useState(null);
-  const nowKey=today().slice(0,7);
-  const [ym,setYm]=useState(nowKey);
-  const accById=(id)=>accounts.find(a=>a.id===id)||{currency:"KRW",ko:"",en:""};
-
-  // 선택한 달 통계
-  const mtx=txns.filter(x=>x.date && String(x.date).slice(0,7)===ym);
-  const inc=mtx.filter(x=>x.type==="income").reduce((s,x)=>s+toKRW(x.amount,accById(x.accountId).currency),0);
-  const exp=mtx.filter(x=>x.type==="expense").reduce((s,x)=>s+toKRW(x.amount,accById(x.accountId).currency),0);
-  const byCat={}; mtx.filter(x=>x.type==="expense").forEach(x=>{ byCat[x.category]=(byCat[x.category]||0)+toKRW(x.amount,accById(x.accountId).currency); });
->>>>>>> 006e2de31a9e35b7fba83f7deed8e61d5a4e458e
   const dData=Object.entries(byCat).map(([k,v],i)=>({k,v,color:DONUT[i%DONUT.length]}));
   const dTot=dData.reduce((s,d)=>s+d.v,0); let ac=0;
   const seg=dData.map(d=>{const a=(ac/dTot)*360;ac+=d.v;const b=(ac/dTot)*360;return `${d.color} ${a}deg ${b}deg`;}).join(", ");
 
-<<<<<<< HEAD
   const shiftYm=(delta)=>{ const [y,m]=ym.split('-').map(Number); const d=new Date(y,m-1+delta,1); const k=monthKey(d.getFullYear(),d.getMonth()); if(k<=nowKey) setYm(k); };
   const isNow=ym===nowKey;
 
@@ -244,33 +187,6 @@ function Money({C,t,lang,rate,setRate,krwCash,lkrCash,moneyKRW,accounts,balanceO
           <div className="opacity-85" style={{fontSize:12}}>{a[lang]}</div>
           <div className="text-lg font-bold mt-0.5" style={{fontVariantNumeric:"tabular-nums"}}>{fmt(balanceOf(a.id))}<span className="text-xs font-normal ml-0.5 opacity-80">{unit}</span></div>
         </div>))}</div>
-=======
-  // 월 이동 (다음달은 이번달까지만)
-  const shiftYm=(delta)=>{ const [y,m]=ym.split('-').map(Number); const d=new Date(y,m-1+delta,1); const k=monthKey(d.getFullYear(),d.getMonth()); if(k<=nowKey) setYm(k); };
-  const isNow=ym===nowKey;
-
-  // 최근 6개월 추이
-  const now=new Date();
-  const months6=[...Array(6)].map((_,i)=>{ const d=new Date(now.getFullYear(),now.getMonth()-(5-i),1); return monthKey(d.getFullYear(),d.getMonth()); });
-  const monthTot=(key)=>{ const list=txns.filter(x=>x.date && String(x.date).slice(0,7)===key); const i=list.filter(x=>x.type==="income").reduce((s,x)=>s+toKRW(x.amount,accById(x.accountId).currency),0); const e=list.filter(x=>x.type==="expense").reduce((s,x)=>s+toKRW(x.amount,accById(x.accountId).currency),0); return {i,e}; };
-  const bars=months6.map(k=>({k,...monthTot(k)}));
-  const barMax=Math.max(1,...bars.map(b=>Math.max(b.i,b.e)));
-
-  return (<>
-    <div className="rounded-3xl p-5 mb-4" style={{background:`linear-gradient(150deg, ${C.hero1}, ${C.hero2})`,color:"#fff"}}>
-      <div className="tracking-widest opacity-70" style={{fontSize:11}}>{t("spendable")}</div>
-      <div className="mt-3 grid grid-cols-2 gap-2">
-        <div className="rounded-2xl px-3 py-3" style={{background:"rgba(255,255,255,.1)"}}>
-          <div className="flex items-center gap-1.5 opacity-85" style={{fontSize:12}}><span className="w-2 h-2 rounded-full" style={{background:ACCENT.krw}}/>🇰🇷 {t("kr")}</div>
-          <div className="text-2xl font-bold mt-1" style={{fontVariantNumeric:"tabular-nums"}}>{fmt(krwCash)}<span className="text-sm font-normal ml-0.5 opacity-80">원</span></div>
-        </div>
-        <div className="rounded-2xl px-3 py-3" style={{background:"rgba(255,255,255,.1)"}}>
-          <div className="flex items-center gap-1.5 opacity-85" style={{fontSize:12}}><span className="w-2 h-2 rounded-full" style={{background:ACCENT.lkr}}/>🇱🇰 {t("lk")}</div>
-          <div className="text-2xl font-bold mt-1" style={{fontVariantNumeric:"tabular-nums"}}>{fmt(lkrCash)}<span className="text-sm font-normal ml-0.5 opacity-80">Rs</span></div>
-        </div>
-      </div>
-      <div className="mt-3 opacity-80" style={{fontSize:12}}>{editRate?(<span className="inline-flex items-center gap-1">1 Rs = <input autoFocus type="number" defaultValue={rate} onBlur={(e)=>{setRate(parseFloat(e.target.value)||0);setEditRate(false);}} className="w-16 px-1 rounded text-black text-center"/>원</span>):(<button onClick={()=>setEditRate(true)} className="underline underline-offset-2">1 Rs = {rate}원 · {t("rateEdit")}</button>)}</div>
->>>>>>> 006e2de31a9e35b7fba83f7deed8e61d5a4e458e
     </div>
 
     {/* 월 이동 */}
@@ -289,10 +205,6 @@ function Money({C,t,lang,rate,setRate,krwCash,lkrCash,moneyKRW,accounts,balanceO
       <div className="flex-1 space-y-1">{dData.slice().sort((a,b)=>b.v-a.v).slice(0,5).map(d=>(<div key={d.k} className="flex items-center gap-2" style={{fontSize:12}}><span className="w-2.5 h-2.5 rounded-full" style={{background:d.color}}/><span className="flex-1">{d.k}</span><span style={{color:C.sub,fontVariantNumeric:"tabular-nums"}}>{Math.round((d.v/dTot)*100)}%</span></div>))}</div>
     </div>}
 
-<<<<<<< HEAD
-=======
-    {/* 월별 6개월 추이 그래프 */}
->>>>>>> 006e2de31a9e35b7fba83f7deed8e61d5a4e458e
     <SectionLabel C={C}>{t("trend")}</SectionLabel>
     <div className="rounded-2xl p-4 mb-4" style={{background:C.card,border:`1px solid ${C.line}`}}>
       <div className="flex items-center gap-3 mb-3" style={{fontSize:11,color:C.sub}}>
@@ -315,13 +227,8 @@ function Money({C,t,lang,rate,setRate,krwCash,lkrCash,moneyKRW,accounts,balanceO
     <div className="space-y-2 mb-4">{accounts.map(a=>{ const bal=balanceOf(a.id); return (
       <div key={a.id} className="rounded-2xl p-3.5" style={{background:C.card,border:`1px solid ${C.line}`}}>
         <div className="flex items-center justify-between">
-<<<<<<< HEAD
           <span className="text-sm font-medium">{a[lang]}</span>
           <div className="flex items-center gap-2"><span className="text-lg font-bold" style={{fontVariantNumeric:"tabular-nums"}}>{fmt(bal)}<span className="text-xs font-normal ml-0.5" style={{color:C.sub}}>{unit}</span></span><button onClick={()=>setEditAcc(editAcc===a.id?null:a.id)} style={{fontSize:13,color:C.sub}}>✏️</button></div>
-=======
-          <div className="flex items-center gap-2"><span className="font-bold px-1.5 py-0.5 rounded" style={{fontSize:10,background:cur.color+"1A",color:cur.color}}>{a.currency}</span><span className="text-sm font-medium">{a[lang]}</span></div>
-          <div className="flex items-center gap-2"><span className="text-lg font-bold" style={{fontVariantNumeric:"tabular-nums"}}>{fmt(bal)}<span className="text-xs font-normal ml-0.5" style={{color:C.sub}}>{cur.unit}</span></span><button onClick={()=>setEditAcc(editAcc===a.id?null:a.id)} style={{fontSize:13,color:C.sub}}>✏️</button></div>
->>>>>>> 006e2de31a9e35b7fba83f7deed8e61d5a4e458e
         </div>
         {editAcc===a.id && <div className="mt-2 flex items-center gap-2"><input type="number" defaultValue={a.start} className="flex-1 min-w-0 px-2 py-1.5 rounded-lg text-sm" style={{border:`1px solid ${C.line}`,background:C.soft,color:C.ink}} onBlur={(e)=>{ onSetStart(a.id, parseFloat(e.target.value)||0); }} /><button onClick={()=>setEditAcc(null)} className="px-3 py-1.5 rounded-lg text-sm text-white" style={{background:C.ink}}>OK</button></div>}
       </div>);})}</div>
@@ -331,75 +238,42 @@ function Money({C,t,lang,rate,setRate,krwCash,lkrCash,moneyKRW,accounts,balanceO
      : <div className="space-y-1.5 mb-4">{recent.map(x=>{ const a=accById(x.accountId); const pos=x.type==="income"; return (
         <div key={x.id} className="rounded-xl px-3 py-2.5 flex items-center gap-3" style={{background:C.card,border:`1px solid ${C.line}`}}>
           <div className="flex-1 min-w-0"><div className="text-sm font-medium truncate">{x.category}{x.memo?` · ${x.memo}`:""}</div><div style={{fontSize:11,color:C.sub}}>{String(x.date).slice(0,10)} · {a[lang]}</div></div>
-<<<<<<< HEAD
           <div className="text-sm font-semibold whitespace-nowrap" style={{color:pos?ACCENT.income:ACCENT.expense,fontVariantNumeric:"tabular-nums"}}>{pos?"+":"−"}{fmt(x.amount)}{unit}</div>
-=======
-          <div className="text-sm font-semibold whitespace-nowrap" style={{color:pos?ACCENT.income:ACCENT.expense,fontVariantNumeric:"tabular-nums"}}>{pos?"+":"−"}{fmt(x.amount)}{cur.unit}</div>
->>>>>>> 006e2de31a9e35b7fba83f7deed8e61d5a4e458e
           <button onClick={()=>onDelTxn(x.id)} className="text-lg leading-none px-1" style={{color:C.line}}>×</button>
         </div>);})}</div>}
 
     <SectionLabel C={C}>{t("overview")}</SectionLabel>
     <div className="rounded-2xl p-4" style={{background:C.card,border:`1px solid ${C.line}`}}>
-<<<<<<< HEAD
       <OverRow C={C} unit={unit} k={t("oMoney")} v={cashC} dot={ACCENT.krw}/>
       <OverRow C={C} unit={unit} k={t("oAssets")} v={assetsValueC} dot={ACCENT.gold}/>
       {lentC>0 && <OverRow C={C} unit={unit} k={t("oLent")} v={lentC} dot={ACCENT.income}/>}
       {oweC>0 && <OverRow C={C} unit={unit} k={t("oDebt")} v={-oweC} dot={ACCENT.expense}/>}
       <div className="flex items-center justify-between pt-3 mt-1" style={{borderTop:`1px solid ${C.line}`}}><span className="text-sm font-bold">{t("netW")}</span><span className="text-xl font-bold" style={{fontVariantNumeric:"tabular-nums",color:netC<0?ACCENT.expense:C.ink}}>{netC<0?"−":""}{fmt(Math.abs(netC))}{unit}</span></div>
-=======
-      <OverRow C={C} k={t("oMoney")} v={moneyKRW} dot={ACCENT.krw}/>
-      <OverRow C={C} k={t("oAssets")} v={assetsKRW} dot={ACCENT.gold}/>
-      {lentKRW>0 && <OverRow C={C} k={t("oLent")} v={lentKRW} dot={ACCENT.income}/>}
-      {oweKRW>0 && <OverRow C={C} k={t("oDebt")} v={-oweKRW} dot={ACCENT.expense}/>}
-      <div className="flex items-center justify-between pt-3 mt-1" style={{borderTop:`1px solid ${C.line}`}}><span className="text-sm font-bold">{t("netW")}</span><span className="text-xl font-bold" style={{fontVariantNumeric:"tabular-nums"}}>{fmt(netWorth)}원</span></div>
->>>>>>> 006e2de31a9e35b7fba83f7deed8e61d5a4e458e
     </div>
   </>);
 }
 
-<<<<<<< HEAD
 function Assets({C,t,unit,assets,onAdd,onOpen}){
   const order=["realestate","gold","fd","invest","other"];
   const totalValue=assets.reduce((s,a)=>s+computePL(a).current,0);
   const totalPL=assets.reduce((s,a)=>s+computePL(a).pl,0);
-=======
-function Assets({C,t,assets,toKRW,onAdd,onOpen}){
-  const order=["realestate","gold","fd","invest","other"];
-  const totalValue=assets.reduce((s,a)=>s+toKRW(computePL(a).current,a.currency),0);
-  const totalPL=assets.reduce((s,a)=>s+toKRW(computePL(a).pl,a.currency),0);
->>>>>>> 006e2de31a9e35b7fba83f7deed8e61d5a4e458e
   const good=totalPL>=0;
   return (<>
     <div className="flex items-center justify-between mb-3"><SectionLabel C={C} nomb>{t("assets")}</SectionLabel><button onClick={onAdd} className="text-xs font-semibold px-3 py-1.5 rounded-full text-white" style={{background:C.ink}}>{t("addAsset")}</button></div>
     {assets.length===0 ? <div className="rounded-2xl p-6 text-center text-sm" style={{background:C.card,border:`1px dashed ${C.line}`,color:C.sub}}>{t("noDebt")}</div> : <>
     <div className="rounded-2xl p-4 mb-4 flex items-center justify-between" style={{background:C.card,border:`1px solid ${C.line}`}}>
-<<<<<<< HEAD
       <div><div style={{fontSize:11,color:C.sub}}>{t("totalValue")}</div><div className="text-xl font-bold" style={{fontVariantNumeric:"tabular-nums"}}>{fmt(totalValue)}{unit}</div></div>
       <div className="text-right"><div style={{fontSize:11,color:C.sub}}>{t("totalPL")}</div><div className="text-xl font-bold" style={{color:good?ACCENT.good:ACCENT.bad,fontVariantNumeric:"tabular-nums"}}>{good?"+":"−"}{fmt(Math.abs(totalPL))}{unit}</div></div>
-=======
-      <div><div style={{fontSize:11,color:C.sub}}>{t("totalValue")}</div><div className="text-xl font-bold" style={{fontVariantNumeric:"tabular-nums"}}>{fmt(totalValue)}원</div></div>
-      <div className="text-right"><div style={{fontSize:11,color:C.sub}}>{t("totalPL")}</div><div className="text-xl font-bold" style={{color:good?ACCENT.good:ACCENT.bad,fontVariantNumeric:"tabular-nums"}}>{good?"+":"−"}{fmt(Math.abs(totalPL))}원</div></div>
->>>>>>> 006e2de31a9e35b7fba83f7deed8e61d5a4e458e
     </div>
     {order.map(kind=>{ const items=assets.filter(a=>a.kind===kind); if(!items.length) return null; return (
       <div key={kind} className="mb-4">
         <div style={{fontSize:12,fontWeight:600,color:C.sub}} className="mb-2">{t(kind)}</div>
-<<<<<<< HEAD
         <div className="space-y-3">{items.map(a=>{ const p=computePL(a); const isFD=a.kind==="fd"; const pct=p.invested>0?p.pl/p.invested*100:0; const g=p.pl>=0; return (
           <button key={a.id} onClick={()=>onOpen(a)} className="w-full text-left rounded-2xl p-4" style={{background:C.card,border:`1px solid ${C.line}`}}>
             <div className="text-sm font-semibold">{a.name}</div>
             <div className="mt-3 rounded-xl p-3" style={{background:(g?ACCENT.good:ACCENT.bad)+"12"}}>
               <div className="flex items-center justify-between"><span className="text-xs font-semibold" style={{color:g?ACCENT.good:ACCENT.bad}}>{g?t("profit"):t("loss")}</span><span style={{fontSize:11,color:C.sub}}>{t("ret")} {pct>=0?"+":""}{pct.toFixed(1)}%</span></div>
               <div className="text-2xl font-bold mt-0.5" style={{color:g?ACCENT.good:ACCENT.bad,fontVariantNumeric:"tabular-nums"}}>{g?"+":"−"}{fmt(Math.abs(p.pl))}<span className="text-sm font-normal ml-0.5">{unit}</span></div>
-=======
-        <div className="space-y-3">{items.map(a=>{ const p=computePL(a); const cur=CCY[a.currency]; const isFD=a.kind==="fd"; const pct=p.invested>0?p.pl/p.invested*100:0; const g=p.pl>=0; return (
-          <button key={a.id} onClick={()=>onOpen(a)} className="w-full text-left rounded-2xl p-4" style={{background:C.card,border:`1px solid ${C.line}`}}>
-            <div className="flex items-center gap-2"><span className="font-bold px-1.5 py-0.5 rounded" style={{fontSize:10,background:cur.color+"1A",color:cur.color}}>{a.currency}</span><span className="text-sm font-semibold">{a.name}</span></div>
-            <div className="mt-3 rounded-xl p-3" style={{background:(g?ACCENT.good:ACCENT.bad)+"12"}}>
-              <div className="flex items-center justify-between"><span className="text-xs font-semibold" style={{color:g?ACCENT.good:ACCENT.bad}}>{g?t("profit"):t("loss")}</span><span style={{fontSize:11,color:C.sub}}>{t("ret")} {pct>=0?"+":""}{pct.toFixed(1)}%</span></div>
-              <div className="text-2xl font-bold mt-0.5" style={{color:g?ACCENT.good:ACCENT.bad,fontVariantNumeric:"tabular-nums"}}>{g?"+":"−"}{fmt(Math.abs(p.pl))}<span className="text-sm font-normal ml-0.5">{cur.unit}</span></div>
->>>>>>> 006e2de31a9e35b7fba83f7deed8e61d5a4e458e
             </div>
             <div className={"mt-3 grid text-center "+(isFD?"grid-cols-3":"grid-cols-2")} style={{fontSize:11}}>
               <MiniStat label={isFD?t("principal"):t("buyPrice")} value={fmt(p.invested)} C={C}/>
@@ -408,10 +282,7 @@ function Assets({C,t,assets,toKRW,onAdd,onOpen}){
             </div>
           </button>);})}</div>
       </div>);})}
-<<<<<<< HEAD
     </>}
-=======
->>>>>>> 006e2de31a9e35b7fba83f7deed8e61d5a4e458e
   </>);
 }
 
@@ -449,11 +320,7 @@ function Debts({C,t,debts,onAdd,onOpen}){
   const label={loan:t("loan"),installment:t("installment"),lent:t("lent")};
   return (<>
     <div className="flex items-center justify-between mb-3"><SectionLabel C={C} nomb>{t("debts")}</SectionLabel><button onClick={onAdd} className="text-xs font-semibold px-3 py-1.5 rounded-full text-white" style={{background:C.ink}}>{t("addDebt")}</button></div>
-<<<<<<< HEAD
     {debts.length===0 ? <div className="rounded-2xl p-6 text-center text-sm" style={{background:C.card,border:`1px dashed ${C.line}`,color:C.sub}}>{t("noDebt")}</div>
-=======
-    {debts.length===0 ? <div className="rounded-2xl p-6 text-center text-sm" style={{background:C.card,border:`1px dashed ${C.line}`,color:C.sub}}>—</div>
->>>>>>> 006e2de31a9e35b7fba83f7deed8e61d5a4e458e
      : <div className="space-y-2">{debts.map(d=>{ const cur=CCY[d.currency]; const lent=d.kind==="lent"; const done=Number(d.remain)<=0; return (
         <button key={d.id} onClick={()=>onOpen(d)} className="w-full text-left rounded-2xl p-4 flex items-center justify-between" style={{background:C.card,border:`1px solid ${C.line}`}}>
           <div><div className="text-sm font-semibold">{d.name}</div><div style={{fontSize:11,color:done?ACCENT.good:C.sub}}>{label[d.kind]}{done?` · ✓ ${t("done")}`:""}</div></div>
@@ -466,7 +333,6 @@ function DebtDetail({C,t,lang,debt,accounts,onPay,onGrow,onDel,onClose}){
   const [d,setD]=useState(debt);
   const isLent=d.kind==="lent"; const cur=CCY[d.currency];
   const accts=accounts.filter(a=>a.currency===d.currency);
-<<<<<<< HEAD
   const needAcc=d.kind!=="installment";
   const done=Number(d.remain)<=0;
   const [mode,setMode]=useState(done?"up":"down");   // down=갚기/돌려받기, up=추가
@@ -488,12 +354,6 @@ function DebtDetail({C,t,lang,debt,accounts,onPay,onGrow,onDel,onClose}){
     }
     setTimeout(onClose,300);
   };
-=======
-  const [amt,setAmt]=useState(""); const [accountId,setAccountId]=useState(accts[0]?accts[0].id:""); const [sent,setSent]=useState(false);
-  const done=Number(d.remain)<=0; const act=isLent?t("collect"):t("pay");
-  const label={loan:t("loan"),installment:t("installment"),lent:t("lent")};
-  const submit=()=>{ if(sent||!(parseFloat(amt)>0)||!accountId) return; setSent(true); setD({...d,remain:Math.max(0,Number(d.remain)-parseFloat(amt))}); onPay(d.id,{amount:parseFloat(amt),accountId,kind:d.kind,category:d.name,memo:act,date:today()}); setTimeout(onClose,300); };
->>>>>>> 006e2de31a9e35b7fba83f7deed8e61d5a4e458e
   return (<Sheet C={C} onClose={onClose}>
     <div className="flex items-center justify-between mb-3"><span className="text-base font-bold">{d.name}</span><button onClick={()=>onDel(d.id)} className="text-xs" style={{color:ACCENT.bad}}>{t("del")}</button></div>
     <div className="rounded-2xl p-4 mb-3 text-center" style={{background:C.soft}}>
@@ -501,7 +361,6 @@ function DebtDetail({C,t,lang,debt,accounts,onPay,onGrow,onDel,onClose}){
       <div className="text-2xl font-bold mt-0.5" style={{color:done?ACCENT.good:isLent?ACCENT.income:ACCENT.expense,fontVariantNumeric:"tabular-nums"}}>{fmt(d.remain)}{cur.unit}</div>
       {done && <div className="text-xs font-semibold mt-1" style={{color:ACCENT.good}}>✓ {t("done")}</div>}
     </div>
-<<<<<<< HEAD
 
     {/* 모드: 갚기/돌려받기 vs 추가 */}
     <div className="grid grid-cols-2 gap-1.5 mb-3">
@@ -518,19 +377,6 @@ function DebtDetail({C,t,lang,debt,accounts,onPay,onGrow,onDel,onClose}){
       <div className="grid grid-cols-2 gap-1.5">{accts.map(a=>{ const on=a.id===accountId; return (<button key={a.id} onClick={()=>setAccountId(a.id)} className="py-2 rounded-lg text-xs font-medium text-left px-2.5" style={{background:on?C.ink:C.chip,color:on?"#fff":C.ink}}>{a[lang]}</button>);})}</div>
     </div>}
     <button onClick={submit} disabled={!valid} className="w-full py-3 rounded-xl text-sm font-semibold text-white" style={{background:valid?C.ink:"#B9C6C2"}}>{actLabel}</button>
-=======
-    {!done && <>
-      <div className="rounded-2xl px-4 py-3 mb-3 flex items-end gap-2" style={{background:C.soft}}>
-        <input autoFocus type="number" inputMode="numeric" value={amt} onChange={(e)=>setAmt(e.target.value)} placeholder="0" className="flex-1 min-w-0 bg-transparent text-3xl font-bold outline-none" style={{color:C.ink,fontVariantNumeric:"tabular-nums"}}/>
-        <span className="text-lg mb-1" style={{color:C.sub}}>{cur.unit}</span>
-      </div>
-      <div className="mb-3">
-        <div style={{fontSize:12,color:C.sub}} className="mb-1.5">{isLent?t("whichIn"):t("whichOut")}</div>
-        <div className="grid grid-cols-2 gap-1.5">{accts.map(a=>{ const on=a.id===accountId; return (<button key={a.id} onClick={()=>setAccountId(a.id)} className="py-2 rounded-lg text-xs font-medium text-left px-2.5" style={{background:on?C.ink:C.chip,color:on?"#fff":C.ink}}>{a[lang]}</button>);})}</div>
-      </div>
-      <button onClick={submit} disabled={!(parseFloat(amt)>0)||sent} className="w-full py-3 rounded-xl text-sm font-semibold text-white" style={{background:parseFloat(amt)>0&&!sent?C.ink:"#B9C6C2"}}>{act}</button>
-    </>}
->>>>>>> 006e2de31a9e35b7fba83f7deed8e61d5a4e458e
   </Sheet>);
 }
 
@@ -549,29 +395,16 @@ function Settings({C,t,lang,setLang,dark_,setDark,rate,setRate,cats}){
   </>);
 }
 
-<<<<<<< HEAD
 function TxForm({C,t,lang,accounts,unit,cats,onSave,onClose}){
   const [type,setType]=useState("expense");
   const [accountId,setAccountId]=useState(accounts[0]?accounts[0].id:"");
   const [amount,setAmount]=useState(""); const [category,setCategory]=useState(""); const [memo,setMemo]=useState(""); const [date,setDate]=useState(today());
   const list=cats[type]||[]; const valid=parseFloat(amount)>0 && category && accountId;
-=======
-function TxForm({C,t,lang,accounts,cats,onSave,onClose}){
-  const [type,setType]=useState("expense");
-  const [accountId,setAccountId]=useState(accounts[0]?accounts[0].id:"");
-  const [amount,setAmount]=useState(""); const [category,setCategory]=useState(""); const [memo,setMemo]=useState(""); const [date,setDate]=useState(today());
-  const acc=accounts.find(a=>a.id===accountId)||accounts[0]||{currency:"KRW"}; const cur=CCY[acc.currency];
-  const list=cats[type]||[]; const valid=parseFloat(amount)>0 && category;
->>>>>>> 006e2de31a9e35b7fba83f7deed8e61d5a4e458e
   return (<Sheet C={C} onClose={onClose}>
     <div className="grid grid-cols-2 gap-2 mb-4">{[["expense",t("expense")],["income",t("income")]].map(([tp,lbl])=>{ const on=type===tp; const col=tp==="income"?ACCENT.income:ACCENT.expense; return (<button key={tp} onClick={()=>{setType(tp);setCategory("");}} className="py-2.5 rounded-xl text-sm font-semibold" style={{background:on?col:C.chip,color:on?"#fff":C.sub}}>{lbl}</button>);})}</div>
     <div className="rounded-2xl px-4 py-3 mb-3 flex items-end gap-2" style={{background:C.soft}}>
       <input autoFocus type="number" inputMode="numeric" value={amount} onChange={(e)=>setAmount(e.target.value)} placeholder="0" className="flex-1 min-w-0 bg-transparent text-3xl font-bold outline-none" style={{color:C.ink,fontVariantNumeric:"tabular-nums"}}/>
-<<<<<<< HEAD
       <span className="text-lg mb-1" style={{color:C.sub}}>{unit}</span>
-=======
-      <span className="text-lg mb-1" style={{color:C.sub}}>{cur.unit}</span>
->>>>>>> 006e2de31a9e35b7fba83f7deed8e61d5a4e458e
     </div>
     <div className="mb-3">
       <div style={{fontSize:12,color:C.sub}} className="mb-1.5">{type==="income"?t("whichIn"):t("whichOut")}</div>
@@ -589,13 +422,8 @@ function TxForm({C,t,lang,accounts,cats,onSave,onClose}){
   </Sheet>);
 }
 
-<<<<<<< HEAD
 function AssetForm({C,t,defCcy,onSave,onClose}){
   const [kind,setKind]=useState("realestate"); const [name,setName]=useState(""); const [currency,setCurrency]=useState(defCcy||"KRW");
-=======
-function AssetForm({C,t,onSave,onClose}){
-  const [kind,setKind]=useState("realestate"); const [name,setName]=useState(""); const [currency,setCurrency]=useState("KRW");
->>>>>>> 006e2de31a9e35b7fba83f7deed8e61d5a4e458e
   const [principal,setPrincipal]=useState(""); const [rateY,setRateY]=useState(""); const [startDate,setStartDate]=useState(today());
   const [buyDate,setBuyDate]=useState(today()); const [buyPrice,setBuyPrice]=useState(""); const [nowValue,setNowValue]=useState("");
   const isFD=kind==="fd";
@@ -623,13 +451,8 @@ function AssetForm({C,t,onSave,onClose}){
   </Sheet>);
 }
 
-<<<<<<< HEAD
 function DebtForm({C,t,lang,accounts,defCcy,onSave,onClose}){
   const [kind,setKind]=useState("loan"); const [name,setName]=useState(""); const [currency,setCurrency]=useState(defCcy||"KRW"); const [remain,setRemain]=useState(""); const [accountId,setAccountId]=useState("");
-=======
-function DebtForm({C,t,lang,accounts,onSave,onClose}){
-  const [kind,setKind]=useState("loan"); const [name,setName]=useState(""); const [currency,setCurrency]=useState("KRW"); const [remain,setRemain]=useState(""); const [accountId,setAccountId]=useState("");
->>>>>>> 006e2de31a9e35b7fba83f7deed8e61d5a4e458e
   const needAcc=kind==="lent"||kind==="loan";
   const accts=(accounts||[]).filter(a=>a.currency===currency);
   const valid=name && parseFloat(remain)>0 && (!needAcc||accountId);
@@ -652,11 +475,7 @@ function Center({C,children}){ return (<div style={{background:C.bg,minHeight:"1
 function Tab({label,icon,on,onClick,C}){ return (<button onClick={onClick} className="flex flex-col items-center gap-0.5 w-14"><span style={{fontSize:18,opacity:on?1:0.5}}>{icon}</span><span style={{fontSize:10,color:on?C.ink:C.sub,fontWeight:on?700:400}}>{label}</span></button>); }
 function Stat({label,value,color,C,border}){ return (<div className="text-center" style={{borderLeft:border?`1px solid ${C.line}`:"none",borderRight:border?`1px solid ${C.line}`:"none"}}><div style={{fontSize:11,color:C.sub}}>{label}</div><div className="text-base font-bold mt-0.5" style={{color,fontVariantNumeric:"tabular-nums"}}>{fmt(value)}</div></div>); }
 function MiniStat({label,value,C}){ return (<div><div style={{color:C.sub}}>{label}</div><div className="font-semibold mt-0.5" style={{color:C.ink,fontVariantNumeric:"tabular-nums"}}>{value}</div></div>); }
-<<<<<<< HEAD
 function OverRow({C,k,v,dot,unit}){ const neg=v<0; return (<div className="flex items-center justify-between py-1.5"><span className="flex items-center gap-2 text-sm" style={{color:C.sub}}><span className="w-2 h-2 rounded-full" style={{background:dot}}/>{k}</span><span className="text-sm font-semibold" style={{fontVariantNumeric:"tabular-nums",color:neg?ACCENT.expense:C.ink}}>{neg?"−":""}{fmt(Math.abs(v))}{unit||"원"}</span></div>); }
-=======
-function OverRow({C,k,v,dot}){ const neg=v<0; return (<div className="flex items-center justify-between py-1.5"><span className="flex items-center gap-2 text-sm" style={{color:C.sub}}><span className="w-2 h-2 rounded-full" style={{background:dot}}/>{k}</span><span className="text-sm font-semibold" style={{fontVariantNumeric:"tabular-nums",color:neg?ACCENT.expense:C.ink}}>{neg?"−":""}{fmt(Math.abs(v))}{CCY.KRW.unit}</span></div>); }
->>>>>>> 006e2de31a9e35b7fba83f7deed8e61d5a4e458e
 function SectionLabel({C,children,nomb}){ return <div className={nomb?"":"mb-2"} style={{fontSize:12,fontWeight:600,color:C.sub,letterSpacing:".02em"}}>{children}</div>; }
 function SettingRow({C,label,children,last}){ return (<div className="flex items-center justify-between px-4 py-3" style={{borderBottom:last?"none":`1px solid ${C.line}`}}><span className="text-sm">{label}</span>{children}</div>); }
 function Toggle({on,onClick,C}){ return (<button onClick={onClick} className="w-11 h-6 rounded-full flex items-center px-0.5" style={{background:on?ACCENT.income:C.line}}><span className="w-5 h-5 rounded-full bg-white" style={{marginLeft:on?20:0,transition:"margin .15s"}}/></button>); }
